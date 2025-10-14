@@ -9,13 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: ghcr.io/robotolev/xetex:1.0.1
     steps:
     - uses: actions/checkout@v4
-
-    - name: Install prerequisites
-      run: |
-        sudo apt update
-        sudo apt install -y python3-pip texlive-xetex fonts-anonymous-pro
 
     - name: Compile PDF
       run: |
