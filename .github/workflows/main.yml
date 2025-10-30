@@ -1,10 +1,17 @@
 name: Compile PDF
 
+  
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment'
+        required: true
+        default: 'staging'
 
 jobs:
   build:
