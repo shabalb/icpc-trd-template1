@@ -29,4 +29,17 @@ x(n)=c1*l1^n+c2*l2^n
 if l1==l2
 x(n)=c1*l^n+c2*n*l^n
 
+
+inclusion-exclusion principle
+
+если A=U(A_i), i = 1..n
+|A|=sum(((-1)^(|I|+1))*|KONIUN(A_j)|,jЭI, IЭ2^N-1
+2^N-1-множество непустых подмножеств N
+|AUB|=|B|+|A|-|A*B|
+
+Bayes' theorem
+
+P(B_i|A)=(P(A|B_i)P(B_i))/(sum(P(A|B_j)P(B_j))) j=1..N
+
+
 */
